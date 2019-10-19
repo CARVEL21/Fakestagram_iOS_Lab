@@ -17,8 +17,8 @@ class CameraViewController: UIViewController {
 
     let client = RestClient<CreatePost>(client: Client.fakestagram, basePath: "/api/v1/posts/")
     @IBAction func onTapCreate(_ sender: Any) {
-        let img = UIImage(named: "yankee")!
-        let newPost = CreatePost(title: "YANKEES⚾️ - \(UUID().uuidString)", imageData: img.base64())
+        let img = UIImage(named: "spacecat")!
+        let newPost = CreatePost(title: "Spacecat🙀 - \(UUID().uuidString)", imageData: img.base64())
         client.create(newPost) { post in
             print("Successful!")
             print(post?.title)
