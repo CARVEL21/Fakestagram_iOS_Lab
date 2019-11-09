@@ -10,7 +10,9 @@ target 'fakestagram' do
   target 'fakestagramTests' do
     inherit! :search_paths
     # Pods for testing
+
    pod 'DVR'
+
   end
 
 end
